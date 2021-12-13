@@ -31,4 +31,5 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Roboto:wght@900&family=Ubuntu:wght@300;500&display=swap');
 </style>
