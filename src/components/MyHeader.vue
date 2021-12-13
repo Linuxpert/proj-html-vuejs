@@ -4,10 +4,31 @@
         <img src="../../src/assets/avada-music-logo.png" alt="">
 
         <!-- <i class="fas fa-bars"></i> -->
-        <Slide>
-            <a id="home" href="#">
-            <span>Home</span>
+        <Slide right width="1918">
+            <a class="burger" href="#">
+            <span class="menu">Home</span>
             </a>
+
+            <a class="burger" href="#">
+            <span class="menu">Meet The Band</span>
+            </a>
+
+            <a class="burger" href="#">
+            <span class="menu">Live Dates</span>
+            </a>
+
+            <a class="burger" href="#">
+            <span class="menu">Latest News</span>
+            </a>
+
+            <a class="burger" href="#">
+            <span class="menu">Albums</span>
+            </a>
+
+            <a class="burger" href="#">
+            <span class="menu">Fans</span>
+            </a>
+
         </Slide>
     </div>
 
@@ -65,23 +86,9 @@ export default {
       align-items: center;
       img {
           margin: 20px;
+          z-index: 1001;
       }
-    //   .fa-bars{
-    //       margin: 20px;
-    //       font-size: 40px;
-    //       color: #fefefe;
-    //       &:hover{
-    //           cursor: pointer;
-    //       }
-    //   }
-    .bm-burger-button{
-        right: 36px;
-    }
-    .bm-menu{
-        background-color: #ea4a56;
-        right: 0;
-        width: 100%;
-    }
+    
   }
 
   .center{
@@ -126,5 +133,29 @@ export default {
           }
       }
   }
+    
 }
+
+    .bm-menu{
+        background-color: #ea4a56;
+    }
+    .burger{
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .menu{
+        font-size: 40px;
+    }
+    .bm-item-list{
+        margin: 10% 0 0 0;
+    }
+    .bm-cross-button{
+        right: 36px !important;
+        top: 36px;
+    }
+    .bm-cross{
+        width: 2px !important;
+        height: 35px !important;
+    }
 </style>
