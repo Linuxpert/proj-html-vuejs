@@ -71,7 +71,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style  lang="scss">
 
 #containerHeader {
   background-image: url(../../src/assets/home_slider.jpg);
@@ -79,7 +79,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-//   height: 200px;
+
   .logoMenu{
       display: flex;
       justify-content: space-between;
@@ -90,8 +90,7 @@ export default {
       }
     
   }
-
-  .center{
+    .center{
       text-align: center;
       margin-top: 10%;
       h1{
@@ -104,6 +103,7 @@ export default {
           color: #fefefe;
       }
   }
+  
 
   .headerBtn{
       display: flex;
@@ -157,5 +157,8 @@ export default {
     .bm-cross{
         width: 2px !important;
         height: 35px !important;
+    }
+    .bm-burger-bars{
+        background-color: #fefefe;
     }
 </style>
