@@ -32,12 +32,12 @@
           
             
             <div class="techCard">
-              <div class="boxHover">
+              <div class="boxHoverLeftHori">
                 <h3 class="info">
                   Tecnology and music
                 </h3>
-                <img src="../../src/assets/blog_music_techo.jpg" alt="">
               </div>
+              <img src="../../src/assets/blog_music_techo.jpg" alt="">
               <h3 class="boxTitle">Tecnology and music</h3> 
               <p class="description">Sed sit amet sem turpis. CUrabitur cursor lacinia est at interdum risus id condimentum.</p>
             </div>
@@ -46,21 +46,36 @@
 
           <div class="boxMiddle">
             <div class="middleCard">
+              <div class="boxHoverLeftVert">
+                <h3 class="info">
+                  While my guitar gently weeps
+                </h3>
+              </div>
               <img src="../../src/assets/blog-post3.jpg" alt="">
-              <h3 class="boxTitle">Tecnology and music</h3> 
+              <h3 class="boxTitle">While my guitar gently weeps</h3> 
               <p class="description">Sed sit amet sem turpis. CUrabitur cursor lacinia est at interdum risus id condimentum.</p>
             </div>
 
             <div class="middleCard">
+              <div class="boxHoverLeftVert">
+                <h3 class="info">
+                  It just sounds better
+                </h3>
+              </div>
               <img src="../../src/assets/blog-post4.jpg" alt="">
-              <h3 class="boxTitle">Tecnology and music</h3> 
+              <h3 class="boxTitle">It just sounds better</h3> 
               <p class="description">Sed sit amet sem turpis. CUrabitur cursor lacinia est at interdum risus id condimentum.</p>
             </div>
           </div>
 
           <div class="rockCard">
+            <div class="boxHoverLeftHori">
+                <h3 class="info">
+                  The flavor of rock
+                </h3>
+              </div>
             <img src="../../src/assets/blog_flavor_rock-1200x600.jpg" alt="">
-            <h3 class="boxTitle">Tecnology and music</h3> 
+            <h3 class="boxTitle">The flavor of rock</h3> 
             <p class="description">Sed sit amet sem turpis. CUrabitur cursor lacinia est at interdum risus id condimentum.</p>
           </div>
 
@@ -68,14 +83,24 @@
 
         <div class="boxRight">
           <div class="oldschoolCard">
+            <div class="boxHoverRightVert1">
+                <h3 class="info">
+                  Taking it back to the old school
+                </h3>
+              </div>
             <img src="../../src/assets/blog-post1-400x600.jpg" alt="">
-            <h3 class="boxTitle">Tecnology and music</h3> 
+            <h3 class="boxTitle">Taking it back to the old school</h3> 
             <p class="description">Sed sit amet sem turpis. CUrabitur cursor lacinia est at interdum risus id condimentum.</p>
           </div>
 
           <div class="legendCard">
+            <div class="boxHoverRightVert2">
+                <h3 class="info">
+                  Sharing the stage with a legend
+                </h3>
+              </div>
             <img src="../../src/assets/blog-post2-400x600.jpg" alt="">
-            <h3 class="boxTitle">Tecnology and music</h3> 
+            <h3 class="boxTitle">Sharing the stage with a legend</h3> 
             <p class="description">Sed sit amet sem turpis. CUrabitur cursor lacinia est at interdum risus id condimentum.</p>
           </div>
         </div>
@@ -97,6 +122,7 @@ export default {
 </script>
 
 <style lang="scss">
+// barra musica
 .music{
   background-color: rgb(50, 56, 68);
   height: 300px;
@@ -127,6 +153,8 @@ h2{
   color: rgb(125, 123, 141);
 }
 
+// parte main immagini
+
 .bandNews{
   background-color: rgb(37, 42, 51);
 }
@@ -142,22 +170,72 @@ h2{
   width: 60%;
   
 }
-.boxHover{
+// hover img
+.boxHoverLeftHori{
   background-color: #ea4a56;  
+  position: absolute;
+  width: 800px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .info{
-    text-align: center;
-    vertical-align: middle;
+    color: #fefefe;
   }
 }
+
+.boxHoverLeftVert{
+  background-color: #ea4a56;  
+  position: absolute;
+  width: 384px;
+  height: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .info{
+    color: #fefefe;
+  }
+}
+
+.boxHoverRightVert1{
+  background-color: #ea4a56;  
+  position: absolute;
+  width: 333px;
+  height: 510px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .info{
+    color: #fefefe;
+  }
+}
+
+.boxHoverRightVert2{
+  background-color: #ea4a56;  
+  position: absolute;
+  width: 333px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .info{
+    color: #fefefe;
+  }
+}
+
+
+
 .techCard{
   width: 100%;
   background-color: rgb(50, 56, 68);
-  
-  
   img{
+    position: relative;
     object-fit: cover;
     width: 100%;
     height: 200px;
+    &:hover{
+      opacity: .5;
+    }
   }
   
 }
@@ -171,9 +249,13 @@ h2{
   width: 48%;
   background-color: rgb(50, 56, 68);
   img{
+  position: relative;
   object-fit: cover;
   width: 100%;
   height: 440px;
+  &:hover{
+      opacity: .5;
+    }
   }
 }
 .rockCard{
@@ -181,9 +263,13 @@ h2{
     background-color: rgb(50, 56, 68);
     width: 100%;
     img{
+      position: relative;
       object-fit: cover;
       width: 100%;
       height: 200px;
+    &:hover{
+      opacity: .5;
+      }
     }
 }
 .boxRight{
@@ -197,18 +283,26 @@ h2{
   background-color: rgb(50, 56, 68);
   width: 100%;
   img{
+      position: relative;
       object-fit: cover;
       width: 100%;
       height: 510px;
+      &:hover{
+      opacity: .5;
+      }
     }
 }
 .legendCard{
   background-color: rgb(50, 56, 68);
   width: 100%;
   img{
+      position: relative;
       object-fit: cover;
       width: 100%;
       height: 400px;
+      &:hover{
+      opacity: .5;
+      }
     }
 }
 .boxTitle{
