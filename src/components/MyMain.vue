@@ -174,7 +174,7 @@ h2{
 .boxHoverLeftHori{
   background-color: #ea4a56;  
   position: absolute;
-  width: 800px;
+  width: 799px;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -187,7 +187,7 @@ h2{
 .boxHoverLeftVert{
   background-color: #ea4a56;  
   position: absolute;
-  width: 384px;
+  width: 383px;
   height: 440px;
   display: flex;
   justify-content: center;
