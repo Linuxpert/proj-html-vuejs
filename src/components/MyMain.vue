@@ -10,7 +10,7 @@
 
       <hr class="bar">
 
-      <p>
+      <p class="descBar">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempore dolores fugit maxime! Fuga, eligendi provident culpa ad, iste sint magni quam molestiae officiis error eos molestias, quisquam ipsum fugiat.
       </p>
 
@@ -23,9 +23,63 @@
 
       <hr class="bar">
 
-      <p>
+      <p class="descBar">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempore dolores fugit maxime! Fuga, eligendi provident culpa ad, iste sint magni quam molestiae officiis error eos molestias, quisquam ipsum fugiat.
       </p>
+
+      <div class="containerNews">
+        <div class="boxLeft">
+          
+            
+            <div class="techCard">
+              <div class="boxHover">
+                <h3 class="info">
+                  Tecnology and music
+                </h3>
+                <img src="../../src/assets/blog_music_techo.jpg" alt="">
+              </div>
+              <h3 class="boxTitle">Tecnology and music</h3> 
+              <p class="description">Sed sit amet sem turpis. CUrabitur cursor lacinia est at interdum risus id condimentum.</p>
+            </div>
+          
+          
+
+          <div class="boxMiddle">
+            <div class="middleCard">
+              <img src="../../src/assets/blog-post3.jpg" alt="">
+              <h3 class="boxTitle">Tecnology and music</h3> 
+              <p class="description">Sed sit amet sem turpis. CUrabitur cursor lacinia est at interdum risus id condimentum.</p>
+            </div>
+
+            <div class="middleCard">
+              <img src="../../src/assets/blog-post4.jpg" alt="">
+              <h3 class="boxTitle">Tecnology and music</h3> 
+              <p class="description">Sed sit amet sem turpis. CUrabitur cursor lacinia est at interdum risus id condimentum.</p>
+            </div>
+          </div>
+
+          <div class="rockCard">
+            <img src="../../src/assets/blog_flavor_rock-1200x600.jpg" alt="">
+            <h3 class="boxTitle">Tecnology and music</h3> 
+            <p class="description">Sed sit amet sem turpis. CUrabitur cursor lacinia est at interdum risus id condimentum.</p>
+          </div>
+
+        </div>
+
+        <div class="boxRight">
+          <div class="oldschoolCard">
+            <img src="../../src/assets/blog-post1-400x600.jpg" alt="">
+            <h3 class="boxTitle">Tecnology and music</h3> 
+            <p class="description">Sed sit amet sem turpis. CUrabitur cursor lacinia est at interdum risus id condimentum.</p>
+          </div>
+
+          <div class="legendCard">
+            <img src="../../src/assets/blog-post2-400x600.jpg" alt="">
+            <h3 class="boxTitle">Tecnology and music</h3> 
+            <p class="description">Sed sit amet sem turpis. CUrabitur cursor lacinia est at interdum risus id condimentum.</p>
+          </div>
+        </div>
+      </div>
     </div>
     
   </div>
@@ -66,7 +120,7 @@ h2{
   margin-left: auto;
   margin-top: 10px ;
 }
-p{
+.descBar{
   text-align: center;
   width: 50%;
   margin: 30px auto;
@@ -76,4 +130,94 @@ p{
 .bandNews{
   background-color: rgb(37, 42, 51);
 }
+.containerNews{
+  margin: 30px auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.boxLeft{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  
+}
+.boxHover{
+  background-color: #ea4a56;  
+  .info{
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+.techCard{
+  width: 100%;
+  background-color: rgb(50, 56, 68);
+  
+  
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+  }
+  
+}
+.boxMiddle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.middleCard{
+  margin-top: 30px;
+  width: 48%;
+  background-color: rgb(50, 56, 68);
+  img{
+  object-fit: cover;
+  width: 100%;
+  height: 440px;
+  }
+}
+.rockCard{
+    margin-top: 30px;
+    background-color: rgb(50, 56, 68);
+    width: 100%;
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 200px;
+    }
+}
+.boxRight{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: space-between;
+  margin-left: 30px ;
+}
+.oldschoolCard{
+  background-color: rgb(50, 56, 68);
+  width: 100%;
+  img{
+      object-fit: cover;
+      width: 100%;
+      height: 510px;
+    }
+}
+.legendCard{
+  background-color: rgb(50, 56, 68);
+  width: 100%;
+  img{
+      object-fit: cover;
+      width: 100%;
+      height: 400px;
+    }
+}
+.boxTitle{
+  color: #ea4a56;
+  margin: 15px 0 5px 10px;
+}
+.description{
+  color: #7d7b8d;
+  margin: 0 0 10px 10px;
+}
+
 </style>
