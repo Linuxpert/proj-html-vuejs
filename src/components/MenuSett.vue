@@ -33,7 +33,11 @@ export default {
     }
     .menu{
         font-size: 40px;
-        color: #fefefe;
+        // color: #fefefe;
+        color: rgb(248, 149, 158);
+        &:hover{
+           color: #fefefe; 
+        }
     }
     .bm-item-list{
         margin: 10% 0 0 0;
