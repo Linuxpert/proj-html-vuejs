@@ -41,18 +41,51 @@
 
       <!-- live places -->
       <div class="containerPlaces">
-        <div class="boxPlace">
-          <i class="fas fa-plus"></i>
-          <span class="textPlace">
-            17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORGIA
-          </span>
+        
+          <div class="boxPlace gem">
+            <i class="fas fa-plus"></i>
+            <span class="textPlace">
+              17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORGIA
+            </span>
+          </div>
+        <!-- estenzione località -->
+        <div class="extension">
+          <div class="cartina">
+            <span>Sample</span>
+          </div>
+          <div class="info">
+            <h3 class="titleInfo">
+              Untold Stories
+            </h3>
+            <p class="textInfo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet optio sit placeat, a sapiente doloremque odio corporis eligendi in nobis fugit iste minus voluptatem minima expedita nam! Similique, odit unde.
+            </p>
+            <button class="btnBuy">BOOK NOW</button>
+          </div>
         </div>
+        
 
         <div class="boxPlace">
           <i class="fas fa-plus"></i>
           <span class="textPlace">
             24/09/2020 GROOVIEFEST DOMINICAL REPUBLIC
           </span>
+        </div>
+
+        <!-- estenzione località -->
+        <div class="extension">
+          <div class="cartina">
+            <span>Sample</span>
+          </div>
+          <div class="info">
+            <h3 class="titleInfo">
+              Untold Stories
+            </h3>
+            <p class="textInfo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet optio sit placeat, a sapiente doloremque odio corporis eligendi in nobis fugit iste minus voluptatem minima expedita nam! Similique, odit unde.
+            </p>
+            <button class="btnBuy">BOOK NOW</button>
+          </div>
         </div>
 
         <div class="boxPlace">
@@ -62,6 +95,22 @@
           </span>
         </div>
 
+        <!-- estenzione località -->
+        <div class="extension">
+          <div class="cartina">
+            <span>Sample</span>
+          </div>
+          <div class="info">
+            <h3 class="titleInfo">
+              Untold Stories
+            </h3>
+            <p class="textInfo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet optio sit placeat, a sapiente doloremque odio corporis eligendi in nobis fugit iste minus voluptatem minima expedita nam! Similique, odit unde.
+            </p>
+            <button class="btnBuy">BOOK NOW</button>
+          </div>
+        </div>
+
         <div class="boxPlace">
           <i class="fas fa-plus"></i>
           <span class="textPlace">
@@ -69,11 +118,43 @@
           </span>
         </div>
 
+        <!-- estenzione località -->
+        <div class="extension">
+          <div class="cartina">
+            <span>Sample</span>
+          </div>
+          <div class="info">
+            <h3 class="titleInfo">
+              Untold Stories
+            </h3>
+            <p class="textInfo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet optio sit placeat, a sapiente doloremque odio corporis eligendi in nobis fugit iste minus voluptatem minima expedita nam! Similique, odit unde.
+            </p>
+            <button class="btnBuy">BOOK NOW</button>
+          </div>
+        </div>
+
         <div class="boxPlace">
           <i class="fas fa-plus"></i>
           <span class="textPlace">
             10/12/2020 ENVISION FESTIVAL - UVITA, COSTA RICA
           </span>
+        </div>
+
+        <!-- estenzione località -->
+        <div class="extension">
+          <div class="cartina">
+            <span>Sample</span>
+          </div>
+          <div class="info">
+            <h3 class="titleInfo">
+              Untold Stories
+            </h3>
+            <p class="textInfo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet optio sit placeat, a sapiente doloremque odio corporis eligendi in nobis fugit iste minus voluptatem minima expedita nam! Similique, odit unde.
+            </p>
+            <button class="btnBuy">BOOK NOW</button>
+          </div>
         </div>
 
       </div>
@@ -243,6 +324,7 @@ export default {
     align-items: center;
     background-color: rgb(50, 56, 68);
     margin-bottom: 10px;
+    
     .fa-plus{
       margin-right: 10px;
       color: #fefefe;
@@ -301,4 +383,45 @@ export default {
     }
   }
 }
+.extension{
+  background-color: rgb(50, 56, 68);
+  margin-bottom: 10px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  display: none;
+
+}
+
+
+.cartina{
+  height: 150px;
+  width: 230px;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info{
+  width: 70%;
+  .titleInfo{
+    color: #fefefe;
+  }
+  .textInfo{
+    color: rgb(125, 123, 141);
+  }
+  .btnBuy{
+    background-color: #ea4a56;
+    color: #fefefe;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+
+
+
+
 </style>

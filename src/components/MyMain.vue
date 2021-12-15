@@ -138,6 +138,7 @@ h2{
     text-align: center;
     padding: 60px 0 10px 0;
     font-size: 60px;
+    font-family: 'Roboto', sans-serif;
   }
 .bar{
   border: 1px solid rgb(68, 78, 98);
