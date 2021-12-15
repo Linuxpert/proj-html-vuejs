@@ -84,19 +84,101 @@
         VIEW ALL LIVE DATES
       </span>
     </div>
-      
+
+    <!-- bottomfooter -->
+    <div class="containerDownFooter">
+      <img src="../../src/assets/avada-music-logo.png" alt="">
+      <div class="footerSett">
+        <FooterSett v-for="link, i in links" :key="i" :details="link"/>
+      </div>
+    </div>
+      <div class="copyrightSocial">
+        <div class="copyright">
+          <a href="#" class="linkCopyr">
+            <span class="textCopyr">
+              @Copyright 2012 - 2020
+            </span>
+          </a>
+
+          <a href="#" class="linkCopyr">
+            <span class="textCopyr">
+              AVADA THEME BY THEMFUSION
+            </span>
+          </a>
+
+          <a href="#" class="linkCopyr">
+            <span class="textCopyr">
+              ALL RIGHTS RESERVED
+            </span>
+          </a>
+
+          <a href="#" class="linkCopyr">
+            <span class="textCopyr">
+              POWERED BY WORDPRESS
+            </span>
+          </a>
+          
+        </div>
+        <div class="social">
+          <div class="boxSocial">
+            <i class="fab fa-facebook-f socialColor"></i>
+          </div>
+
+          <div class="boxSocial">
+            <i class="fab fa-twitter socialColor"></i>
+          </div>
+
+          <div class="boxSocial">
+            <i class="fab fa-instagram socialColor"></i>
+          </div>
+
+          <div class="boxSocial">
+            <i class="fab fa-youtube socialColor"></i>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import FooterSett from '@/components/FooterSett.vue'
 
 export default {
   name: 'MyFooter',
   components: {
-    
+    FooterSett
+  },
+    data(){
+      return {
+             links: [
+                {
+                    text: "Home",
+                    urls:"#"
+                },
+                {
+                    text: "Meet The Band",
+                    urls:"#"
+                },
+                {
+                    text: "Live Dates",
+                    urls:"#"
+                },
+                {
+                    text: "Latest News",
+                    urls:"#"
+                },
+                {
+                    text: "Albums",
+                    urls:"#"
+                },
+                {
+                    text: "Fans",
+                    urls:"#"
+                },
+             ]
+      }
   }
 }
 </script>
@@ -170,6 +252,52 @@ export default {
     .textPlace{
       color: #ea4a56;
       padding: 15px;
+    }
+  }
+}
+.containerDownFooter{
+  background-color:rgb(50, 56, 68); 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+.footerSett{
+  display: flex;
+}
+
+.copyrightSocial{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  .linkCopyr{
+    text-decoration: none;
+  }
+  .textCopyr{
+    color: rgb(125, 123, 141);
+    margin: 0 10px;
+    font-size: 13px;
+    &:hover{
+      color: #fefefe;
+    }
+  }
+  .social{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .boxSocial{
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      background-color: rgb(50, 56, 68);
+      margin: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .socialColor{
+        color: rgb(125, 123, 141);
+      }
     }
   }
 }
