@@ -159,10 +159,11 @@ h2{
   background-color: rgb(37, 42, 51);
 }
 .containerNews{
-  margin: 30px auto;
+  margin: 30px auto 0 auto;
   width: 70%;
   display: flex;
   justify-content: center;
+  padding-bottom: 80px;
 }
 .boxLeft{
   display: flex;
